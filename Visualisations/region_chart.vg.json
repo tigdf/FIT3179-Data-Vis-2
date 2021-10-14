@@ -1,0 +1,31 @@
+{
+  "$schema " : "https://vega.github.io/schema/vega-lite/v4.json",
+  "title"    : {"text": "Mean Confirmed Cases by WHO Region", "anchor": "left", "offset": 20},
+  "data"     : {"url": "https://raw.githubusercontent.com/Vincent-Cheong/FIT3179/main/Covid-19.csv"},
+  "width"    : 825,
+  "height"   : 100,
+  "background": null,
+
+  "transform": [{"filter": "datum['Mean of Confirmed Cases'] != 0"}],
+
+  "encoding" : {"y": {"field": "Mean of Confirmed Cases", "type": "quantitative", "axis": null},
+                "x": {"field": "WHO regions", "type" : "nominal", "axis" : {"title": null, "ticks": false, "labelPadding": 10, "labelFontSize": 12, "labelAngle": 360}}},
+
+  "layer"    : [{"transform": [{"calculate": "3", "as": "Position"}],
+                 "mark"     : {"type": "text", "fontSize": 13},
+                 "encoding" : {"y": {"field": "Position"}, "text": {"field": "Mean of Confirmed Cases", "format": "0.0f"}}},
+
+                {"transform": [{"calculate": "10", "as": "Position"}],
+                 "mark"     : {"type": "image", "width": 75, "height": 75},
+                 "encoding" : {"y"  : {"field": "Position", "type": "quantitative"},
+                               "x"  : {"field": "WHO regions", "type": "nominal"},
+                               "url": {"field": "Image URL", "type": "nominal"}}}],
+                               
+  "config"    : {"axis"  : {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+                 "header": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+                 "mark"  : {"font": "Open Sans"},
+                 "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+                 "title" : {"font": "Open Sans"},
+                 "style" : {"cell": {"stroke": "transparent"}},
+                 "text"  : {"align": "center", "fontWeight": "bold", "font": "Open Sans"}}
+}

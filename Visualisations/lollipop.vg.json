@@ -1,0 +1,126 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#111111",
+    "config": {
+      "style": {"cell": {"stroke": "transparent"}},
+      "legend": {"labelColor": "aliceblue", "titleColor": "aliceblue"},
+      "axis": {
+        "labelColor": "aliceblue",
+        "gridDash": {
+          "condition": {
+            "test": {"field": "Country", "timeUnit": "Total_Attacks", "equal": 4},
+            "value": []
+          },
+          "value": [2, 2]
+        },
+        "tickDash": {
+          "condition": {
+            "test": {"field": "Country", "timeUnit": "Total_Attacks", "equal": 4},
+            "value": []
+          },
+          "value": [2, 2]
+        }
+      }
+    },
+    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
+    "width": 500,
+    "height": 400,
+     "title": {
+      "text": "Change in Terrorist Attack Before and After 9/11",
+      "color":"aliceblue",
+      "subtitle": "Impact is determined by calculating global terorrism index score on a scale of 0 to 10. Iraq has had the most fatal impact at GTI score of 9.96.",
+      "fontWeight":600,
+      "fontSize": 15,
+      "subtitleColor": "#111111",
+      "subtitlePadding": 10,
+      "subtitleFontStyle": "italic",
+      "anchor": "middle"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/nateruze/FIT3179/main/bar_lollipop.csv"
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Country",
+          "oneOf": [
+            "Colombia ",
+            "Peru",
+            "El Salvador",
+            "United Kingdom",
+            "India",
+            "Spain",
+            "Turkey",
+            "United States ",
+            "France",
+            "Chile",
+            "Iraq",
+            "Afghanistan",
+            "Pakistan",
+            "Philippines",
+            "Somalia",
+            "Nigeria",
+            "Thailand",
+            "Yemen",
+            "Libya"
+          ]
+        }
+      },
+      {"filter": {"field": "Attack_Time", "oneOf": ["Pre 9/11", "Post 9/11"]}}
+    ],
+    "encoding": {
+      "x": {
+        "field": "Total_Attacks",
+        "type": "quantitative",
+        "title": "Total Number of Attacks",
+        "axis": {"titleColor": "aliceblue"}
+      },
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "axis": {
+          "offset": 10,
+          "ticks": false,
+          "minExtent": 1,
+          "domain": false,
+          "titleColor": "aliceblue"
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {"field": "Country", "type": "nominal"},
+          "color": {"value": "#ffba08"},
+          "size": {"value": 2},
+          "opacity": {"value": 0.5}
+        }
+      },
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "color": {
+            "field": "Attack_Time",
+            "type": "ordinal",
+            "scale": {
+              "domain": ["Pre 9/11", "Post 9/11"],
+              "range": ["#840032", "#E5DADA"]
+            },
+            "title": "Time Period"
+          },
+          "size": {"value": 120},
+          "opacity": {"value": 1},
+            "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {
+          "field": "Total_Attacks",
+          "type": "quantitative",
+          "title": "Total Attacks"
+        }
+      ]
+        }
+      }
+    ]
+  }
