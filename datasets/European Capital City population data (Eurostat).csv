@@ -1,45 +1,45 @@
 City,Country,Population,Year
-Moscow,Russia,"10,005,000","2,000"
-London,United Kingdom,"7,195,000","2,000"
-Berlin,Germany,"3,387,000","2,000"
-Madrid,Spain,"2,883,000","2,000"
-Rome,Italy,"3,708,000","2,000"
-Paris,France,"2,130,000","2,000"
-Bucharest,Romania,"2,010,000","2,000"
-Minsk,Belarus,"1,700,000","2,000"
-Warsaw,Poland,"1,672,000","2,000"
-Vienna,Austria,"1,549,000","2,000"
-Stockholm,Sweden,"1,206,000","2,000"
-Belgrade,Serbia,"1,257,000","2,000"
-Kiev,Ukraine,"2,606,000","2,000"
-Prague,Czech Republic,"1,187,000","2,000"
-Copenhagen,Denmark,"495,699","2,000"
-Sofia,Bulgaria,"1,128,000","2,000"
-Dublin,Ireland,"989,000","2,000"
-Brussels,Belgium,"964,405","2,000"
-Amsterdam,Netherlands,"1,005,000","2,000"
-Oslo,Norway,"774,000","2,000"
-Helsinki,Finland,"1,019,000","2,000"
-Athens,Greece,"3,179,000","2,000"
-Moscow,Russia,"12,655,000","2,020"
-London,United Kingdom,"9,002,488","2,020"
-Berlin,Germany,"3,562,000","2,020"
-Madrid,Spain,"6,680,000","2,020"
-Rome,Italy,"4,278,350","2,020"
-Paris,France,"2,185,574","2,020"
-Bucharest,Romania,"1,803,000","2,020"
-Minsk,Belarus,"2,028,000","2,020"
-Warsaw,Poland,"1,783,000","2,020"
-Vienna,Austria,"1,930,000","2,020"
-Stockholm,Sweden,"975,551","2,020"
-Belgrade,Serbia,"1,398,000","2,020"
-Kiev,Ukraine,"2,988,000","2,020"
-Prague,Czech Republic,"1,306,000","2,020"
-Copenhagen,Denmark,"1,346,000","2,020"
-Sofia,Bulgaria,"1,281,000","2,020"
-Dublin,Ireland,"1,420,000","2,020"
-Brussels,Belgium,"1,220,000","2,020"
-Amsterdam,Netherlands,"1,149,000","2,020"
-Oslo,Norway,"1,041,000","2,020"
-Helsinki,Finland,"1,305,000","2,020"
-Athens,Greece,"3,153,000","2,020"
+Moscow,Russia,10005000,2000
+London,United Kingdom,7195000,2000
+Berlin,Germany,3387000,2000
+Madrid,Spain,2883000,2000
+Rome,Italy,3708000,2000
+Paris,France,2130000,2000
+Bucharest,Romania,2010000,2000
+Minsk,Belarus,1700000,2000
+Warsaw,Poland,1672000,2000
+Vienna,Austria,1549000,2000
+Stockholm,Sweden,1206000,2000
+Belgrade,Serbia,1257000,2000
+Kiev,Ukraine,2606000,2000
+Prague,Czech Republic,1187000,2000
+Copenhagen,Denmark,495699,2000
+Sofia,Bulgaria,1128000,2000
+Dublin,Ireland,989000,2000
+Brussels,Belgium,964405,2000
+Amsterdam,Netherlands,1005000,2000
+Oslo,Norway,774000,2000
+Helsinki,Finland,1019000,2000
+Athens,Greece,3179000,2000
+Moscow,Russia,12655000,2020
+London,United Kingdom,9002488,2020
+Berlin,Germany,3562000,2020
+Madrid,Spain,6680000,2020
+Rome,Italy,4278350,2020
+Paris,France,2185574,2020
+Bucharest,Romania,1803000,2020
+Minsk,Belarus,2028000,2020
+Warsaw,Poland,1783000,2020
+Vienna,Austria,1930000,2020
+Stockholm,Sweden,975551,2020
+Belgrade,Serbia,1398000,2020
+Kiev,Ukraine,2988000,2020
+Prague,Czech Republic,1306000,2020
+Copenhagen,Denmark,1346000,2020
+Sofia,Bulgaria,1281000,2020
+Dublin,Ireland,1420000,2020
+Brussels,Belgium,1220000,2020
+Amsterdam,Netherlands,1149000,2020
+Oslo,Norway,1041000,2020
+Helsinki,Finland,1305000,2020
+Athens,Greece,3153000,2020
