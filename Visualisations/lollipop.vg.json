@@ -1,90 +1,56 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "background": "#111111",
-    "config": {
-      "style": {"cell": {"stroke": "transparent"}},
-      "legend": {"labelColor": "aliceblue", "titleColor": "aliceblue"},
-      "axis": {
-        "labelColor": "aliceblue",
-        "gridDash": {
-          "condition": {
-            "test": {"field": "Country", "timeUnit": "Total_Attacks", "equal": 4},
-            "value": []
-          },
-          "value": [2, 2]
-        },
-        "tickDash": {
-          "condition": {
-            "test": {"field": "Country", "timeUnit": "Total_Attacks", "equal": 4},
-            "value": []
-          },
-          "value": [2, 2]
-        }
-      }
-    },
-    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
-    "width": 500,
-    "height": 400,
-     "title": {
-      "text": "Change in Terrorist Attack Before and After 9/11",
-      "color":"aliceblue",
-      "subtitle": "Impact is determined by calculating global terorrism index score on a scale of 0 to 10. Iraq has had the most fatal impact at GTI score of 9.96.",
-      "fontWeight":600,
-      "fontSize": 15,
-      "subtitleColor": "#111111",
-      "subtitlePadding": 10,
-      "subtitleFontStyle": "italic",
-      "anchor": "middle"
-    },
+    "title": "Change in Population of European Capital Cities between 2010-2020",
     "data": {
-      "url": "https://raw.githubusercontent.com/nateruze/FIT3179/main/bar_lollipop.csv"
+      "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/European%20Capital%20City%20population%20data%20(Eurostat).csv"
     },
     "transform": [
       {
         "filter": {
-          "field": "Country",
+          "field": "City",
           "oneOf": [
-            "Colombia ",
-            "Peru",
-            "El Salvador",
-            "United Kingdom",
-            "India",
-            "Spain",
-            "Turkey",
-            "United States ",
-            "France",
-            "Chile",
-            "Iraq",
-            "Afghanistan",
-            "Pakistan",
-            "Philippines",
-            "Somalia",
-            "Nigeria",
-            "Thailand",
-            "Yemen",
-            "Libya"
+            "Moscow",
+            "London",
+            "Berlin",
+            "Madrid",
+            "Rome",
+            "Paris",
+            "Bucharest",
+            "Minsk",
+            "Warsaw",
+            "Vienna",
+            "Stockholm",
+            "Belgrade",
+            "Kiev",
+            "Prague",
+            "Copenhagen",
+            "Sofia",
+            "Dublin",
+            "Brussels",
+            "Amsterdam",
+            "Oslo",
+            "Helsinki",
+            "Athens"
           ]
         }
       },
-      {"filter": {"field": "Attack_Time", "oneOf": ["Pre 9/11", "Post 9/11"]}}
+      {"filter": {"field": "Year", "oneOf": [2000, 2020]}}
     ],
     "encoding": {
       "x": {
-        "field": "Total_Attacks",
+        "field": "Population",
         "type": "quantitative",
-        "title": "Total Number of Attacks",
-        "axis": {"titleColor": "aliceblue"}
+        "title": "Population ('000)"
       },
       "y": {
-        "field": "Country",
+        "field": "City",
         "type": "nominal",
-        "title": "Country",
+        "title": "City",
         "axis": {
           "offset": 10,
           "ticks": false,
           "minExtent": 1,
-          "domain": false,
-          "titleColor": "aliceblue"
+          "domain": false
         }
       }
     },
@@ -92,8 +58,7 @@
       {
         "mark": "line",
         "encoding": {
-          "detail": {"field": "Country", "type": "nominal"},
-          "color": {"value": "#ffba08"},
+          "detail": {"field": "City", "type": "nominal"},
           "size": {"value": 2},
           "opacity": {"value": 0.5}
         }
@@ -102,23 +67,18 @@
         "mark": {"type": "point", "filled": true},
         "encoding": {
           "color": {
-            "field": "Attack_Time",
+            "field": "Year",
             "type": "ordinal",
             "scale": {
-              "domain": ["Pre 9/11", "Post 9/11"],
-              "range": ["#840032", "#E5DADA"]
+              "domain": [2000, 2020]
             },
-            "title": "Time Period"
+            "title": "Year"
           },
           "size": {"value": 120},
           "opacity": {"value": 1},
-            "tooltip": [
-        {"field": "Country", "type": "nominal", "title": "Country"},
-        {
-          "field": "Total_Attacks",
-          "type": "quantitative",
-          "title": "Total Attacks"
-        }
+        "tooltip": [
+          {"field": "City", "type": "nominal", "title": "City"},
+          {"field": "Population", "type": "quantitative", "title": "Population"}
       ]
         }
       }

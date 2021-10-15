@@ -22,7 +22,7 @@
         {
           "type": "filter",
           "expr": "selected_state == 'All' || selected_state == datum.State"
-        },
+        }, 
         {
           "type": "aggregate",
           "groupby": ["Category_2015"],
