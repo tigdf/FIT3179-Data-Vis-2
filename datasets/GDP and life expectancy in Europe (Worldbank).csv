@@ -1,4 +1,4 @@
-Country,Country Code,Region,Year,GDP Per Capita (USD),"Life expectancy at birth, total (years)",Population
+Country,Country Code,Region,Year,GDP Per Capita,Life expectancy,Population
 Albania,ALB,Central and Eastern Europe,2010,4094.350334,76.562,2913021
 Albania,ALB,Central and Eastern Europe,2011,4437.142885,76.914,2905195
 Albania,ALB,Central and Eastern Europe,2012,4247.629984,77.252,2900401
