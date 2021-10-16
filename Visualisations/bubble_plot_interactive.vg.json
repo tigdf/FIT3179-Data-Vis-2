@@ -2,9 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 700,
   "height": 400,
-  "title": "GDP Per Capita vs. Life Expectancy per Country",
+  "title": {
+    "text": "GDP Per Capita vs. Life Expectancy in Europe",
+    "fontSize": 16
+  },
   "data": {
-    "url": "https://raw.githubusercontent.com/tigdf/FIT3179_Homework_10/main/data/GDP%20and%20life%20expectancy%20(Worldbank).csv"
+    "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/GDP%20and%20life%20expectancy%20in%20Europe%20(Worldbank).csv"
+  },
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"grid": false}
   },
   "params": [
     {
@@ -19,28 +26,24 @@
       }
     },
     {
-      "name": "Continent_selection",
+      "name": "Region_selection",
       "bind": {
         "input": "select",
         "options": [
           null,
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
+          "Central and Eastern Europe",
+          "Western Europe",
+          "Southern Europe",
+          "Northern Europe"
         ],
         "labels":[
           "Show All",
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
+          "Central and Eastern Europe",
+          "Western Europe",
+          "Southern Europe",
+          "Northern Europe"
         ],
-        "name": "Continent Selection: "
+        "name": "Region Selection: "
       }
     }
   ],
@@ -48,7 +51,7 @@
     {"filter": "datum.Year == Year_selection"},
     {"filter": "datum['GDP Per Capita'] > 0"},
     {"filter": "datum['Life expectancy'] > 0"},
-    {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
+    {"filter": "Region_selection == null || datum.Region == Region_selection"}
   ],
   "encoding": {
     "x": {
@@ -62,60 +65,60 @@
       "field": "Life expectancy",
       "type": "quantitative",
       "title": "Life expectancy (years)",
-      "axis": {"tickCount": 6},
+      "axis": {"tickCount": 10, "grid": true},
       "scale": {"type": "linear", "domain": [40, 100]}
     }
   },
   "layer": [
     {
       "selection": {
-        "continent_highlight": {
+        "region_highlight": {
           "type": "multi",
-          "fields": ["Continent"],
+          "fields": ["Region"],
           "bind": "legend"
         }
       },
-      "mark": "circle",
+      "mark": {
+        "type": "circle",
+        "stroke": "#000000",
+        "strokeWidth": 0.3
+      },
       "encoding": {
         "size": {
           "field": "Population",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+            "domain": [1000000, 5000000, 20000000, 50000000],
             "range": [10, 50, 150, 200, 300, 400]
           },
           "legend": {"format": ".1s"}
         },
         "color": {
-          "field": "Continent",
+          "field": "Region",
           "type": "nominal",
           "scale": {
             "domain": [
-              "North America",
-              "South America",
-              "Europe",
-              "Africa",
-              "Asia",
-              "Oceania"
+              "Central and Eastern Europe",
+              "Western Europe",
+              "Southern Europe",
+              "Northern Europe"
             ],
             "range": [
               "#e41a1c",
               "#984ea3",
               "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
-              "#a65628"
+              "#377eb8"
             ]
           }
         },
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "condition": {"selection": "region_highlight", "value": 0.6},
           "value": 0.2
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Continent", "type": "nominal"},
+          {"field": "Region", "type": "nominal"},
           {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","},
           {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ","}
@@ -136,14 +139,14 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'Yemen, Rep.' ||  datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Russian Federation' || datum['Country'] == 'Hungary' || datum['Country'] == 'Liechtenstein' || datum['Country'] == 'United Kingdom'",
             "value": 1
           },
           "value": 0
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Continent", "type": "nominal"},
+          {"field": "Region", "type": "nominal"},
           {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","},
           {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ","}

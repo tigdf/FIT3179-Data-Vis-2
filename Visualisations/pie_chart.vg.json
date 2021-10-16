@@ -1,173 +1,61 @@
 {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Proportion of rivers in 2015",
-  "background": "#E4E4E9",
-  "padding": {"left": 50, "top": 20},
-  "width": 200,
-  "height": 170,
-  "style": "cell",
-  "encode": {"update": {"stroke": {"value": null}}},
-  "signals": [
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": {
+    "text": "Ethnic Composition in different European Regions",
+    "subtitle": "Based on most up-to-date data from the National Census.",
+    "subtitleFontStyle": "italic",
+    "fontSize": 16
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/Ethnic%20diversity%20of%20Europe%20(Eurostat).csv"
+  },
+  "params": [
     {
-      "name": "selected_state",
-      "value": "All"
-    }
-  ],
-  "data": [
-    {
-      "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/rivers_wqi.csv",
-      "format": {"type": "csv", "delimiter": ","},
-      "transform": [
-        {
-          "type": "filter",
-          "expr": "selected_state == 'All' || selected_state == datum.State"
-        }, 
-        {
-          "type": "aggregate",
-          "groupby": ["Category_2015"],
-          "ops": ["count"],
-          "fields": [null],
-          "as": ["count"]
-        },
-        {"type": "formula", "expr": "datum.count", "as": "label"}
-      ]
-    },
-    {
-      "name": "data_0",
-      "source": "source_0",
-      "transform": [
-        {
-          "type": "stack",
-          "groupby": [],
-          "field": "count",
-          "sort": {"field": ["Category_2015"], "order": ["ascending"]},
-          "as": ["count_start", "count_end"],
-          "offset": "zero"
-        },
-        {
-          "type": "filter",
-          "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
-        }
-      ]
-    },
-    {
-      "name": "data_1",
-      "source": "source_0",
-      "transform": [
-        {
-          "type": "stack",
-          "groupby": [],
-          "field": "count",
-          "sort": {
-            "field": ["Category_2015", "label"],
-            "order": ["ascending", "ascending"]
-          },
-          "as": ["count_start", "count_end"],
-          "offset": "zero"
-        },
-        {
-          "type": "filter",
-          "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
-        }
-      ]
-    }
-  ],
-  "marks": [
-    {
-      "name": "layer_0_marks",
-      "type": "arc",
-      "style": ["arc"],
-      "from": {"data": "data_0"},
-      "encode": {
-        "update": {
-          "padAngle": {"value": 0.02},
-          "innerRadius": {"value": 75},
-          "cornerRadius": {"value": 50},
-          "fill": {"scale": "color", "field": "Category_2015"},
-          "description": {
-            "signal": "\"count: \" + (format(datum[\"count\"], \"\")) + \"; Category_2015: \" + (isValid(datum[\"Category_2015\"]) ? datum[\"Category_2015\"] : \"\"+datum[\"Category_2015\"])"
-          },
-          "x": {"signal": "width", "mult": 0.5},
-          "y": {"signal": "height", "mult": 0.5},
-          "outerRadius": {"signal": "min(width,height)/2"},
-          "startAngle": {"scale": "theta", "field": "count_end"},
-          "endAngle": {"scale": "theta", "field": "count_start"},
-          "tooltip": {
-            "signal": "{\"Category\": datum[\"Category_2015\"], \"Number of Rivers\": format(datum[\"count\"], \"\")}"
-          }
-        }
-      }
-    },
-    {
-      "name": "layer_1_marks",
-      "type": "text",
-      "style": ["text"],
-      "from": {"data": "data_1"},
-      "encode": {
-        "update": {
-          "radius": {"value": 100},
-          "fill": {"scale": "color", "field": "Category_2015"},
-          "description": {
-            "signal": "\"count: \" + (format(datum[\"count\"], \"\")) + \"; Category_2015: \" + (isValid(datum[\"Category_2015\"]) ? datum[\"Category_2015\"] : \"\"+datum[\"Category_2015\"]) + \"; label: \" + (isValid(datum[\"label\"]) ? datum[\"label\"] : \"\"+datum[\"label\"])"
-          },
-          "x": {"signal": "width", "mult": 0.5},
-          "y": {"signal": "height", "mult": 0.5},
-          "text": {
-            "signal": "isValid(datum[\"label\"]) ? datum[\"label\"] : \"\"+datum[\"label\"]"
-          },
-          "align": {"value": "center"},
-          "baseline": {"value": "middle"},
-          "theta": {
-            "signal": "scale(\"theta\", 0.5 * datum[\"count_start\"] + 0.5 * datum[\"count_end\"])"
-          }
-        }
-      }
-    },
-    {
-      "name": "layer_2_marks",
-      "type": "text",
-      "style": ["text"],
-      "from": {"data": "data_0"},
-      "encode": {
-        "update": {
-          "fill": {"value": "#0D2149"},
-          "text": {"value": "2015"},
-          "description": {
-            "signal": "\"count: \" + (format(datum[\"count\"], \"\")) + \"; Category_2015: \" + (isValid(datum[\"Category_2015\"]) ? datum[\"Category_2015\"] : \"\"+datum[\"Category_2015\"])"
-          },
-          "x": {"signal": "width", "mult": 0.5},
-          "y": {"signal": "height", "mult": 0.5},
-          "fontSize": {"value": 36},
-          "align": {"value": "center"},
-          "baseline": {"value": "middle"},
-          "theta": {
-            "signal": "scale(\"theta\", 0.5 * datum[\"count_start\"] + 0.5 * datum[\"count_end\"])"
-          }
-        }
+      "name": "Region_selection",
+      "value": "Overall",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Overall",
+          "Central and Eastern Europe",
+          "Western Europe",
+          "Southern Europe",
+          "Northern Europe"
+        ],
+        "labels":[
+          "Overall",
+          "Central and Eastern Europe",
+          "Western Europe",
+          "Southern Europe",
+          "Northern Europe"
+        ],
+        "name": "Region Selection: "
       }
     }
   ],
-  "scales": [
+  "transform": [
+    {"filter": "datum.Region == Region_selection"}
+  ],
+  "encoding": {
+    "theta": {"field": "Proportion", "type": "quantitative", "stack": true},
+    "color": {"field": "Ethnicity", "type": "nominal"}
+  },
+  "layer": [
     {
-      "name": "theta",
-      "type": "linear",
-      "domain": {
-        "fields": [
-          {"data": "data_0", "field": "count_start"},
-          {"data": "data_0", "field": "count_end"},
-          {"data": "data_1", "field": "count_start"},
-          {"data": "data_1", "field": "count_end"}
-        ]
+    "mark": {"type": "arc", "outerRadius": 170, "innerRadius": 50},
+    "encoding": {
+       "tooltip": [
+      {
+        "field": "Ethnicity", "type": "nominal", "title": "Ethnic Group"
       },
-      "range": [0, 6.283185307179586],
-      "zero": true
-    },
-    {
-      "name": "color",
-      "type": "ordinal",
-      "domain": ["Clean", "Slightly Polluted", "Polluted"],
-      "range": ["#208AAE", "#898B80", "#60492C"]
+      {
+        "field": "Proportion", "type": "quantitative", "title": "Proportion (%)"
+      }
+    ]
     }
-  ]
+  }
+  ],
+  "view": {"stroke": null}
 }

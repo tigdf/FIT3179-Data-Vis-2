@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "width": 800,
+  "width": 600,
   "height": 400,
   "data": [
     {
@@ -31,7 +31,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": {"data": "table", "field": "text"},
-      "range": ["#840032", "#E59500", "#E5DADA"]
+      "range": ["#9d0208", "#ffba08", "#e85d04", "#81b29a"]
     }
   ],
   "marks": [
@@ -51,7 +51,7 @@
       "transform": [
         {
           "type": "wordcloud",
-          "size": [800, 400],
+          "size": [600, 400],
           "text": {"field": "text"},
           "rotate": {"field": "datum.angle"},
           "fontSize": {"field": "datum.count"},

@@ -1,19 +1,83 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Cost of living by Country (2020)",
-  "width": 800,
-  "height": 500,
-  "data": {
-    "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/geodata/ne_110m_admin_0_countries.topojson",
-    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  "title": {
+    "text": "Cost and Quality of living in Europe and the World (2020)",
+    "subtitle": "Based on most up-to-date data from Numbeo.",
+    "subtitleFontStyle": "italic",
+    "fontSize": 16
   },
-  "projection": {"type": "equalEarth"},
+  "width": 700,
+  "height": 400,
+  "projection": {
+    "type": "equalEarth",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 300,
+      "bind": {
+        "input": "range",
+        "min": 100,
+        "max": 1000,
+        "step": 50,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [15,50],
+      "bind": {
+        "input": "select",
+        "options": [
+          [15, 50],
+          [10, 0],
+          [145, -37],
+          [-100, 40],
+          [-50, -20],
+          [100, 30]
+        ],
+        "labels": ["Europe", "Africa", "Oceania", "North America", "South America","Asia"],
+        "name": "Map Centre: "
+      }
+    },
+    {
+      "name": "Index_selection",
+      "value": "Cost of Living Index",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Cost of Living Index",
+          "Quality of Life Index"
+        ],
+        "labels":[
+          "Cost of Living Index",
+          "Quality of Life Index"
+        ],
+        "name": "Index Selection: "
+      }
+    }
+  ],
   "layer":[
     {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/geodata/ne_110m_admin_0_countries.topojson",
+        "format": {
+          "type": "topojson", 
+          "feature": "ne_110m_admin_0_countries"
+        }
+      },
       "transform": [
-        {"calculate": "'Data is not available in ' + datum.properties.NAME", "as": "note"}
+        {
+          "calculate": "'Data is not available in ' + datum.properties.NAME", "as": "note"
+        }
       ],
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "mark": {
+        "type": "geoshape", 
+        "fill": "lightgray", 
+        "stroke": "white"
+      },
       "encoding": {
         "tooltip": {
           "field": "note"
@@ -21,30 +85,56 @@
       }
     },
     {
-      "transform": [{
-          "lookup": "properties.NAME",
+      "data": {
+        "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/cost_of_living_indices_country_2020v2%20(Numbeo).csv"
+      },
+      "transform": [
+        {
+          "lookup": "Country",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/cost_of_living_indices_country_2020 (Numbeo).csv"
+              "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/geodata/ne_110m_admin_0_countries.topojson",
+              "format": {
+                "type": "topojson", 
+                "feature": "ne_110m_admin_0_countries"
+              }
             },
-            "key": "Country",
-            "fields": ["Cost of Living Index"]
-          }
+            "key": "properties.NAME"
+          },
+          "as": "geo"
+        },
+        {
+          "filter": "datum['Index Type'] == Index_selection"
         }
       ],
-      "mark": {"type": "geoshape"},
+      "mark": {
+        "type": "geoshape", 
+        "strokeWidth": 0.3, 
+        "stroke": "#000d83"
+      },
       "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
         "color": {
-          "field": "Cost of Living Index",
+          "field": "Index Value",
           "type": "quantitative",
-          "scale": {"type": "linear"}
+          "scale": {"type": "linear"},
+          "legend": {"title": "Index Value"}
         },
         "tooltip": [
-          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Cost of Living Index", "type": "quantitative"}
+          {
+            "field": "Country", "type": "nominal", "title": "Country"
+          },
+          {
+            "field": "Index Type", "type": "nominal"
+          },
+          {
+            "field": "Index Value", "type": "quantitative"
+          }
         ]
       }
     }  
   ]
-
 }

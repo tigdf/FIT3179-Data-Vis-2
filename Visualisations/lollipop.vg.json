@@ -1,9 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Change in Population of European Capital Cities between 2010-2020",
+    "title": {
+      "text": "Change in Population of European Capital Cities between 2000-2020",
+      "fontSize": 16
+    },
     "data": {
       "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/European%20Capital%20City%20population%20data%20(Eurostat).csv"
     },
+    "width": 600,
+    "height": 450,
     "transform": [
       {
         "filter": {
@@ -34,13 +39,17 @@
           ]
         }
       },
-      {"filter": {"field": "Year", "oneOf": [2000, 2020]}}
+      {"filter": {
+        "field": "Year", 
+        "oneOf": [2000, 2020]
+        }
+      }
     ],
     "encoding": {
       "x": {
         "field": "Population",
         "type": "quantitative",
-        "title": "Population ('000)"
+        "title": "Population"
       },
       "y": {
         "field": "City",
