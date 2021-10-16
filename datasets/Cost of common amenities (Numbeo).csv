@@ -1,24 +1,116 @@
-City,Country,Water (600ml bottle),Fast Food (Combo Meal),Movie ticket,Monthly Public Transport,Monthly Rent
-Vienna,Austria,2.52,9.41,12.94,57.62,1050.5
-Minsk,Belarus,0.42,3.8,3.8,15.21,399.43
-Brussels,Belgium,2.43,10.58,14.11,58.8,999.09
-Sofia,Bulgaria,0.72,6.02,7.23,30.11,434.79
-Prague,Czech Republic,1.3,6.76,9.01,24.79,831.05
-Copenhagen,Denmark,2.96,12.65,18.97,94.86,1635.1
-Helsinki,Finland,2.07,9.41,17.64,70.2,1163.89
-Paris,France,2.66,10.58,13.99,88.2,1435.45
-Athens,Greece,0.59,7.08,9.44,35.42,460.42
-Budapest,Hungary,0.89,5.24,6.31,31.14,514.82
-Dublin,Ireland,1.72,10.42,14.17,165.28,1939.21
-Rome,Italy,1.31,9.44,10.63,41.32,1109.73
-Amsterdam,Netherlands,2.53,10.63,14.17,115.11,1895.25
-Oslo,Norway,3.24,12.93,15.28,90.51,1522.69
-Warsaw,Poland,0.9,5.66,7.71,28.28,796.55
-Bucharest,Romania,1.46,4.8,7.21,16.82,479.02
-Moscow,Russia,0.54,4.53,5.83,28.11,865.61
-Belgrade,Serbia,1.22,6.02,5.02,32.63,419.91
-Madrid,Spain,1.82,9.5,10.68,65.17,1058.39
-Stockholm,Sweden,2.25,9.28,15.08,108.2,1458.66
-Zurich,Switzerland,4.63,16.11,21.48,91.31,2154
-Kiev,Ukraine,0.42,4.32,4.32,12.59,561.96
-London,United Kingdom,1.55,8.3,17.98,207.46,2358.95
+City,Country,Item,Price
+Vienna,Austria,Water (600ml bottle),2.52
+Vienna,Austria,Fast Food (Combo Meal),9.41
+Vienna,Austria,Movie ticket,12.94
+Vienna,Austria,Monthly Public Transport,57.62
+Vienna,Austria,Monthly Rent,1050.5
+Minsk,Belarus,Water (600ml bottle),0.42
+Minsk,Belarus,Fast Food (Combo Meal),3.8
+Minsk,Belarus,Movie ticket,3.8
+Minsk,Belarus,Monthly Public Transport,15.21
+Minsk,Belarus,Monthly Rent,399.43
+Brussels,Belgium,Water (600ml bottle),2.43
+Brussels,Belgium,Fast Food (Combo Meal),10.58
+Brussels,Belgium,Movie ticket,14.11
+Brussels,Belgium,Monthly Public Transport,58.8
+Brussels,Belgium,Monthly Rent,999.09
+Sofia,Bulgaria,Water (600ml bottle),0.72
+Sofia,Bulgaria,Fast Food (Combo Meal),6.02
+Sofia,Bulgaria,Movie ticket,7.23
+Sofia,Bulgaria,Monthly Public Transport,30.11
+Sofia,Bulgaria,Monthly Rent,434.79
+Prague,Czech Republic,Water (600ml bottle),1.3
+Prague,Czech Republic,Fast Food (Combo Meal),6.76
+Prague,Czech Republic,Movie ticket,9.01
+Prague,Czech Republic,Monthly Public Transport,24.79
+Prague,Czech Republic,Monthly Rent,831.05
+Copenhagen,Denmark,Water (600ml bottle),2.96
+Copenhagen,Denmark,Fast Food (Combo Meal),12.65
+Copenhagen,Denmark,Movie ticket,18.97
+Copenhagen,Denmark,Monthly Public Transport,94.86
+Copenhagen,Denmark,Monthly Rent,1635.1
+Helsinki,Finland,Water (600ml bottle),2.07
+Helsinki,Finland,Fast Food (Combo Meal),9.41
+Helsinki,Finland,Movie ticket,17.64
+Helsinki,Finland,Monthly Public Transport,70.2
+Helsinki,Finland,Monthly Rent,1163.89
+Paris,France,Water (600ml bottle),2.66
+Paris,France,Fast Food (Combo Meal),10.58
+Paris,France,Movie ticket,13.99
+Paris,France,Monthly Public Transport,88.2
+Paris,France,Monthly Rent,1435.45
+Athens,Greece,Water (600ml bottle),0.59
+Athens,Greece,Fast Food (Combo Meal),7.08
+Athens,Greece,Movie ticket,9.44
+Athens,Greece,Monthly Public Transport,35.42
+Athens,Greece,Monthly Rent,460.42
+Budapest,Hungary,Water (600ml bottle),0.89
+Budapest,Hungary,Fast Food (Combo Meal),5.24
+Budapest,Hungary,Movie ticket,6.31
+Budapest,Hungary,Monthly Public Transport,31.14
+Budapest,Hungary,Monthly Rent,514.82
+Dublin,Ireland,Water (600ml bottle),1.72
+Dublin,Ireland,Fast Food (Combo Meal),10.42
+Dublin,Ireland,Movie ticket,14.17
+Dublin,Ireland,Monthly Public Transport,165.28
+Dublin,Ireland,Monthly Rent,1939.21
+Rome,Italy,Water (600ml bottle),1.31
+Rome,Italy,Fast Food (Combo Meal),9.44
+Rome,Italy,Movie ticket,10.63
+Rome,Italy,Monthly Public Transport,41.32
+Rome,Italy,Monthly Rent,1109.73
+Amsterdam,Netherlands,Water (600ml bottle),2.53
+Amsterdam,Netherlands,Fast Food (Combo Meal),10.63
+Amsterdam,Netherlands,Movie ticket,14.17
+Amsterdam,Netherlands,Monthly Public Transport,115.11
+Amsterdam,Netherlands,Monthly Rent,1895.25
+Oslo,Norway,Water (600ml bottle),3.24
+Oslo,Norway,Fast Food (Combo Meal),12.93
+Oslo,Norway,Movie ticket,15.28
+Oslo,Norway,Monthly Public Transport,90.51
+Oslo,Norway,Monthly Rent,1522.69
+Warsaw,Poland,Water (600ml bottle),0.9
+Warsaw,Poland,Fast Food (Combo Meal),5.66
+Warsaw,Poland,Movie ticket,7.71
+Warsaw,Poland,Monthly Public Transport,28.28
+Warsaw,Poland,Monthly Rent,796.55
+Bucharest,Romania,Water (600ml bottle),1.46
+Bucharest,Romania,Fast Food (Combo Meal),4.8
+Bucharest,Romania,Movie ticket,7.21
+Bucharest,Romania,Monthly Public Transport,16.82
+Bucharest,Romania,Monthly Rent,479.02
+Moscow,Russia,Water (600ml bottle),0.54
+Moscow,Russia,Fast Food (Combo Meal),4.53
+Moscow,Russia,Movie ticket,5.83
+Moscow,Russia,Monthly Public Transport,28.11
+Moscow,Russia,Monthly Rent,865.61
+Belgrade,Serbia,Water (600ml bottle),1.22
+Belgrade,Serbia,Fast Food (Combo Meal),6.02
+Belgrade,Serbia,Movie ticket,5.02
+Belgrade,Serbia,Monthly Public Transport,32.63
+Belgrade,Serbia,Monthly Rent,419.91
+Madrid,Spain,Water (600ml bottle),1.82
+Madrid,Spain,Fast Food (Combo Meal),9.5
+Madrid,Spain,Movie ticket,10.68
+Madrid,Spain,Monthly Public Transport,65.17
+Madrid,Spain,Monthly Rent,1058.39
+Stockholm,Sweden,Water (600ml bottle),2.25
+Stockholm,Sweden,Fast Food (Combo Meal),9.28
+Stockholm,Sweden,Movie ticket,15.08
+Stockholm,Sweden,Monthly Public Transport,108.2
+Stockholm,Sweden,Monthly Rent,1458.66
+Zurich,Switzerland,Water (600ml bottle),4.63
+Zurich,Switzerland,Fast Food (Combo Meal),16.11
+Zurich,Switzerland,Movie ticket,21.48
+Zurich,Switzerland,Monthly Public Transport,91.31
+Zurich,Switzerland,Monthly Rent,2154
+Kiev,Ukraine,Water (600ml bottle),0.42
+Kiev,Ukraine,Fast Food (Combo Meal),4.32
+Kiev,Ukraine,Movie ticket,4.32
+Kiev,Ukraine,Monthly Public Transport,12.59
+Kiev,Ukraine,Monthly Rent,561.96
+London,United Kingdom,Water (600ml bottle),1.55
+London,United Kingdom,Fast Food (Combo Meal),8.3
+London,United Kingdom,Movie ticket,17.98
+London,United Kingdom,Monthly Public Transport,207.46
+London,United Kingdom,Monthly Rent,2358.95
