@@ -9,7 +9,7 @@
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,45 +23,35 @@
     font-family: 'Oxygen', sans-serif;
     line-height: 1.5;
   }
-
   h1 {
     font-weight: 900;
-
   }
-
   body {
     background-color: lightgray;
   }
-
   .page {
-    width: 750px;
+    width: 900px;
     background-color: white;
     margin: auto;
     padding: 70px;
     padding-top: 35px;
   }
-
   .vis-container {
     width: 100%;
   }
-
   .description h2,
   h1 {
     margin-top: 10px;
   }
-
   .description-right {
     padding-left: 10px;
   }
-
   .description-left {
     padding-right: 10px;
   }
-
   .pure-g {
     margin-bottom: 25px;
   }
-
   .small-font {
     font-size: 13px;
   }
@@ -76,6 +66,7 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>Living in Europe</h1>
+        <p>This data has been collected from various sources including Worldbank and Eurostat.</p>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -88,38 +79,82 @@
     </div>
     <!-- end pure grid group -->
 
-    <!-- Bubble plot -->
+    <!-- Caption/small text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p>text</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- Bar chart -->
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div id="vis2" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
-  </div> <!-- end page -->
 
-    <!-- WordCloud -->
+    <!-- Bubble plot -->
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div id="vis3" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
-  </div> <!-- end page -->
+
+    <!-- More text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p>text</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- WordCloud -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+          <h2>Most popular sports in Europe</h2>
+          <p>Football is the dominating sport in Europe, followed by basketball, tennis and hockey.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
 
    <!-- Lollipop -->
    <div class="pure-g">
     <div class="pure-u-1-1">
-      <div id="vis4" class="vis-container"></div>
+      <div id="vis5" class="vis-container"></div>
     </div>
   </div>
   <!-- end pure grid group -->
+
+  <!-- Lollipop -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div id="vis6" class="vis-container"></div>
+    </div>
+  </div>
+  <!-- end pure grid group -->
+
+  <div class="pure-g">
+    <div class="pure-u-1-1 small-font">
+      <p>This visualisation was created by David Fan.</p>
+    </div>
+  </div>
 </div> <!-- end page -->
 
   <script type="text/javascript">
     var specVis1 = "./Visualisations/choropleth_map.vg.json";
-    var specVis2 = "./Visualisations/scatter_plot_interactive.vg.json";
-    var specVis3 = "./Visualisations/wordcloud.vg.json";
-    var specVis4 = "./Visualisations/lollipop.vg.json";
+    var specVis2 = "./Visualisations/bar_chart.vg.json";
+    var specVis3 = "./Visualisations/bubble_plot_interactive.vg.json";
+    var specVis4 = "./Visualisations/wordcloud.vg.json";
+    var specVis5 = "./Visualisations/lollipop.vg.json";
+    var specVis6 = "./Visualisations/pie_chart.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -134,6 +169,14 @@
     }).catch(console.error);
 
     vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
