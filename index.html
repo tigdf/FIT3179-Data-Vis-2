@@ -4,27 +4,28 @@
 <head>
   <title>Living in Europe</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+
   <!-- Import vega-embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
   <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 <!-- custom style -->
 <style>
   * {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
   }
   h1 {
-    font-weight: 900;
+    font-weight: 600;
   }
   body {
     background-color: lightgray;
@@ -34,7 +35,7 @@
     background-color: white;
     margin: auto;
     padding: 70px;
-    padding-top: 35px;
+    padding-top: 25px;
   }
   .vis-container {
     width: 100%;
@@ -50,7 +51,7 @@
     padding-right: 10px;
   }
   .pure-g {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .small-font {
     font-size: 13px;
@@ -59,14 +60,17 @@
 </head>
 
 <body>
-
   <div class="page">
 
     <!-- Title and subtitle -->
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>Living in Europe</h1>
-        <p>This data has been collected from various sources including Worldbank and Eurostat.</p>
+        <p>
+          Europe is a thriving continent which houses many of the world's most socioeconomically developed countries. 
+          As a result, many countries have a relatively high GDP Per Capita and Life Expectancy at birth, similar to Australia. 
+          The visualisation below explores the cost, quality and viability of living in Europe for a Melburnian, drawing parallels between countries and regions.
+        </p>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -82,7 +86,17 @@
     <!-- Caption/small text -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <p>text</p>
+        <p>
+          Cost of Living Index: This index is relative indicator of consumer goods prices, including groceries, restaurants, transportation and utilities.<br><br>
+          Quality of Life Index: This index is an estimation of overall quality of life by using a formula which takes into account purchasing power, 
+          pollution, house price to income ratio, cost of living, safety, health care, traffic commute times and climate.<br><br>
+          These indices are relative to Melbourne which has a base index of 100. If another city has, for example, cost of living index of 120, it means that on an average, 
+          in that particular city, cost of living is 20% more expensive than Melbourne.<br><br> 
+          Cost of Living in Europe is generally quite high across the board, as most countries have a very high quality of life.
+          We can see a gradual decrease in living costs and quality of life from the Western and Northern regions of Europe to the Eastern and Southern regions, 
+          where countries belonging to the former Soviet bloc are located. 
+          The country with the highest cost of living is Swizterland and the country with the lowest is Kosovo.
+        </p>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -95,6 +109,34 @@
     </div>
     <!-- end pure grid group -->
 
+    <!-- Caption/small text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p>
+          We can observe from this chart that capital cities in Western and Northern Europe have on average much higher living costs than Southern and Central and Eastern Europe.
+          However, most of the cities from Western and Northern Europe have costs that are comparable to Melbourne and Sydney, which have costs pegged at the high 400 to low 500 mark.
+        </p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- Caption/small text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+          <h2>
+            High GDP Per Capita and Life Expectancy across the board
+          </h2>
+          <p>
+            Here, we can see the GDP Per Capita and Life Expectancy of capital cities in each European region. As expected, Western and Northern Europe lead the
+            charge, followed closely by Southern and then Central/Eastern Europe.
+            Over the decade however, countries across Europe, especially in Central and Eastern Europe, have had vast improvements in their quality of life and 
+            socioeconmic status due to the establishment of the European Union, which promoted economic and social solidarity aross the continent.<br><br>
+            Australia, in comparison, has a GDP Per Capita of USD 51,800 and life expectancy of 83 years.
+          </p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
     <!-- Bubble plot -->
     <div class="pure-g">
       <div class="pure-u-1-1">
@@ -103,58 +145,86 @@
     </div>
     <!-- end pure grid group -->
 
-    <!-- More text -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-        <p>text</p>
-      </div>
-    </div>
-    <!-- end pure grid group -->
+    <br>
 
     <!-- WordCloud -->
     <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-right">
-          <h2>Most popular sports in Europe</h2>
-          <p>Football is the dominating sport in Europe, followed by basketball, tennis and hockey.</p>
-        </div>
-      </div>
-      <div class="pure-u-1-2">
+      <div class="pure-u-2-3">
         <div id="vis4" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-3">
+        <div class="description description-right">
+          <h2>Most Popular Sports in Europe</h2>
+          <p>
+            The wordcloud on the left showcases the most popular sports in Europe by font size - the bigger the more popular.
+            Football is by far the most dominant sport in Europe, followed by basketball, tennis and hockey.
+            Compared to Australia, there are some overlapping interests as the most dominant sports here are AFL, Swimming,
+            Cricket, Tennis, Basketball and Soccer (Football) respectively.
+          </p>
+        </div>
       </div>
     </div>
     <!-- end pure grid group -->
 
-   <!-- Lollipop -->
-   <div class="pure-g">
-    <div class="pure-u-1-1">
-      <div id="vis5" class="vis-container"></div>
-    </div>
-  </div>
-  <!-- end pure grid group -->
+    <br>
 
-  <!-- Lollipop -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <div id="vis6" class="vis-container"></div>
+    <!-- Pie Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2>Europe Ethnically Diverse as Australia</h2>
+          <p>
+            We can see in the pie chart that Europe overall is a fairly homogenous region with most people belonging to the white ethnicities group.
+            Western and Central/Eastern Europe are the most diverse regions, with around 10-15% of their population belonging to other ethnicities.<br><br>
+            In comparison, Australia has a 76% white population, with 24% belonging to other ethnicities.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis5" class="vis-container"></div>
+      </div>
     </div>
-  </div>
-  <!-- end pure grid group -->
+    <!-- end pure grid group -->
 
-  <div class="pure-g">
-    <div class="pure-u-1-1 small-font">
-      <p>This visualisation was created by David Fan.</p>
+    <br>
+
+    <!-- Lollipop -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>
+            Madrid, London and Moscow outgrowing peers
+          </h2>
+          <p>
+            Inspecting the lollipop chart, we can observe that Madrid, London, Moscow and Copenhagen have had a substantial surge in population over the last couple
+            of decades. This is largely due to improvements in infrastructure, urban spawl and international migration.<br><br>
+            By the same token, Melbourne has also grown at a similar rate due to strong international migration and rising birth rates.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="vis6" class="vis-container"></div>
+      </div>
     </div>
-  </div>
-</div> <!-- end page -->
+    <!-- end pure grid group -->
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>
+          This visualisation was created by <a href="https://github.com/tigdf">David Fan.</a> 
+          Data has been collected from Worldbank, Eurostat and National Census websites.
+        </p>
+      </div>
+    </div>
+  </div> <!-- end page -->
 
   <script type="text/javascript">
     var specVis1 = "./Visualisations/choropleth_map.vg.json";
     var specVis2 = "./Visualisations/bar_chart.vg.json";
     var specVis3 = "./Visualisations/bubble_plot_interactive.vg.json";
     var specVis4 = "./Visualisations/wordcloud.vg.json";
-    var specVis5 = "./Visualisations/lollipop.vg.json";
-    var specVis6 = "./Visualisations/pie_chart.vg.json";
+    var specVis5 = "./Visualisations/pie_chart.vg.json";
+    var specVis6 = "./Visualisations/lollipop.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
