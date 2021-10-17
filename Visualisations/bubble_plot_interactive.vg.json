@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": "container",
   "height": 400,
   "title": {
     "text": "GDP Per Capita vs. Life Expectancy in Europe",
@@ -11,7 +11,23 @@
   },
   "config": {
     "style": {"cell": {"stroke": "transparent"}},
-    "axis": {"grid": false}
+    "axis": {
+      "grid": false,
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "header": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "title": {
+      "font": "Lato",
+      "fontWeight": 600
+    }
   },
   "params": [
     {
@@ -119,9 +135,9 @@
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {"field": "Region", "type": "nominal"},
-          {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": ","},
+          {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": "$.2f"},
           {"field": "Population", "type": "quantitative", "format": ","},
-          {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ","}
+          {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ".2f"}
         ]
       }
     },
@@ -147,9 +163,9 @@
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {"field": "Region", "type": "nominal"},
-          {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": ","},
+          {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP Per Capita (USD)", "format": "$.2f"},
           {"field": "Population", "type": "quantitative", "format": ","},
-          {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ","}
+          {"field": "Life expectancy", "type": "quantitative", "title": "Life expectancy (Years)", "format": ".2f"}
         ]
       }
     }

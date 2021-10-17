@@ -4,7 +4,7 @@
     "text": "Cost of Common Amenities in European Capital Cities",
     "fontSize": 16
   },
-  "width": 700,
+  "width": "container",
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/Cost%20of%20common%20amenities%20(Numbeo).csv"
@@ -67,6 +67,25 @@
           "range": ["#9d0208", "#ffba08", "#e85d04",  "#fff3b0", "#81b29a"]
       },
       "title": "Item"
-  }
+    }
+  },
+  "config": {
+    "numberFormat": "$.2f",
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "header": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "title": {
+      "font": "Lato",
+      "fontWeight": 600
+    }
   }
 }

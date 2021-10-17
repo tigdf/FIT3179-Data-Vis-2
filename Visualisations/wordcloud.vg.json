@@ -56,10 +56,27 @@
           "rotate": {"field": "datum.angle"},
           "fontSize": {"field": "datum.count"},
           "fontWeight": {"field": "datum.weight"},
-          "fontSizeRange": [12, 75],
-          "padding": 2
+          "fontSizeRange": [12, 75]
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "header": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "title": {
+      "font": "Lato",
+      "fontWeight": 600
+    }
+  }
 }

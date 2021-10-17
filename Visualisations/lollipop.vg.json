@@ -7,8 +7,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/tigdf/FIT3179-Data-Vis-2/main/datasets/European%20Capital%20City%20population%20data%20(Eurostat).csv"
     },
-    "width": 600,
-    "height": 450,
+    "width": "container",
+    "height": 420,
     "transform": [
       {
         "filter": {
@@ -87,9 +87,27 @@
           "opacity": {"value": 1},
         "tooltip": [
           {"field": "City", "type": "nominal", "title": "City"},
-          {"field": "Population", "type": "quantitative", "title": "Population"}
-      ]
-        }
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
       }
-    ]
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "header": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    },
+    "title": {
+      "font": "Lato",
+      "fontWeight": 600
+    }
   }
+}
