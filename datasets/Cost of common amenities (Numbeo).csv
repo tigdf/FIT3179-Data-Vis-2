@@ -1,116 +1,116 @@
 City,Country,Region,Item,Price
-Vienna,Austria,Western Europe,Water (600ml bottle),2.52
-Vienna,Austria,Western Europe,Fast Food (Combo Meal),9.41
-Vienna,Austria,Western Europe,Movie ticket,12.94
-Vienna,Austria,Western Europe,Weekly Public Transport,13.26048734
-Vienna,Austria,Western Europe,Weekly Rent,241.7587981
-Minsk,Belarus,Central and Eastern Europe,Water (600ml bottle),0.42
-Minsk,Belarus,Central and Eastern Europe,Fast Food (Combo Meal),3.8
-Minsk,Belarus,Central and Eastern Europe,Movie ticket,3.8
-Minsk,Belarus,Central and Eastern Europe,Weekly Public Transport,3.500382027
-Minsk,Belarus,Central and Eastern Europe,Weekly Rent,91.92357614
-Brussels,Belgium,Western Europe,Water (600ml bottle),2.43
-Brussels,Belgium,Western Europe,Fast Food (Combo Meal),10.58
-Brussels,Belgium,Western Europe,Movie ticket,14.11
-Brussels,Belgium,Western Europe,Weekly Public Transport,13.53204886
-Brussels,Belgium,Western Europe,Weekly Rent,229.9274609
-Sofia,Bulgaria,Central and Eastern Europe,Water (600ml bottle),0.72
-Sofia,Bulgaria,Central and Eastern Europe,Fast Food (Combo Meal),6.02
-Sofia,Bulgaria,Central and Eastern Europe,Movie ticket,7.23
-Sofia,Bulgaria,Central and Eastern Europe,Weekly Public Transport,6.92942162
-Sofia,Bulgaria,Central and Eastern Europe,Weekly Rent,100.0612164
-Prague,Czech Republic,Central and Eastern Europe,Water (600ml bottle),1.3
-Prague,Czech Republic,Central and Eastern Europe,Fast Food (Combo Meal),6.76
-Prague,Czech Republic,Central and Eastern Europe,Movie ticket,9.01
-Prague,Czech Republic,Central and Eastern Europe,Weekly Public Transport,5.70509339
-Prague,Czech Republic,Central and Eastern Europe,Weekly Rent,191.2552586
-Copenhagen,Denmark,Northern Europe,Water (600ml bottle),2.96
-Copenhagen,Denmark,Northern Europe,Fast Food (Combo Meal),12.65
-Copenhagen,Denmark,Northern Europe,Movie ticket,18.97
-Copenhagen,Denmark,Northern Europe,Weekly Public Transport,21.83078495
-Copenhagen,Denmark,Northern Europe,Weekly Rent,376.2968213
-Helsinki,Finland,Northern Europe,Water (600ml bottle),2.07
-Helsinki,Finland,Northern Europe,Fast Food (Combo Meal),9.41
-Helsinki,Finland,Northern Europe,Movie ticket,17.64
-Helsinki,Finland,Northern Europe,Weekly Public Transport,16.15560936
-Helsinki,Finland,Northern Europe,Weekly Rent,267.8540196
-Paris,France,Western Europe,Water (600ml bottle),2.66
-Paris,France,Western Europe,Fast Food (Combo Meal),10.58
-Paris,France,Western Europe,Movie ticket,13.99
-Paris,France,Western Europe,Weekly Public Transport,20.29807329
-Paris,France,Western Europe,Weekly Rent,330.3499922
-Athens,Greece,Southern Europe,Water (600ml bottle),0.59
-Athens,Greece,Southern Europe,Fast Food (Combo Meal),7.08
-Athens,Greece,Southern Europe,Movie ticket,9.44
-Athens,Greece,Southern Europe,Weekly Public Transport,8.151448482
-Athens,Greece,Southern Europe,Weekly Rent,105.9596248
-Budapest,Hungary,Central and Eastern Europe,Water (600ml bottle),0.89
-Budapest,Hungary,Central and Eastern Europe,Fast Food (Combo Meal),5.24
-Budapest,Hungary,Central and Eastern Europe,Movie ticket,6.31
-Budapest,Hungary,Central and Eastern Europe,Weekly Public Transport,7.166462612
-Budapest,Hungary,Central and Eastern Europe,Weekly Rent,118.4790714
-Dublin,Ireland,Western Europe,Water (600ml bottle),1.72
-Dublin,Ireland,Western Europe,Fast Food (Combo Meal),10.42
-Dublin,Ireland,Western Europe,Movie ticket,14.17
-Dublin,Ireland,Western Europe,Weekly Public Transport,38.03702442
-Dublin,Ireland,Western Europe,Weekly Rent,446.2837496
-Rome,Italy,Southern Europe,Water (600ml bottle),1.31
-Rome,Italy,Southern Europe,Fast Food (Combo Meal),9.44
-Rome,Italy,Southern Europe,Movie ticket,10.63
-Rome,Italy,Southern Europe,Weekly Public Transport,9.509256106
-Rome,Italy,Southern Europe,Weekly Rent,255.3898059
-Amsterdam,Netherlands,Western Europe,Water (600ml bottle),2.53
-Amsterdam,Netherlands,Western Europe,Fast Food (Combo Meal),10.63
-Amsterdam,Netherlands,Western Europe,Movie ticket,14.17
-Amsterdam,Netherlands,Western Europe,Weekly Public Transport,26.49105688
-Amsterdam,Netherlands,Western Europe,Weekly Rent,436.1669321
-Oslo,Norway,Northern Europe,Water (600ml bottle),3.24
-Oslo,Norway,Northern Europe,Fast Food (Combo Meal),12.93
-Oslo,Norway,Northern Europe,Movie ticket,15.28
-Oslo,Norway,Northern Europe,Weekly Public Transport,20.8296895
-Oslo,Norway,Northern Europe,Weekly Rent,350.4271341
-Warsaw,Poland,Central and Eastern Europe,Water (600ml bottle),0.9
-Warsaw,Poland,Central and Eastern Europe,Fast Food (Combo Meal),5.66
-Warsaw,Poland,Central and Eastern Europe,Movie ticket,7.71
-Warsaw,Poland,Central and Eastern Europe,Weekly Public Transport,6.50827112
-Warsaw,Poland,Central and Eastern Europe,Weekly Rent,183.3155361
-Bucharest,Romania,Central and Eastern Europe,Water (600ml bottle),1.46
-Bucharest,Romania,Central and Eastern Europe,Fast Food (Combo Meal),4.8
-Bucharest,Romania,Central and Eastern Europe,Movie ticket,7.21
-Bucharest,Romania,Central and Eastern Europe,Weekly Public Transport,3.870902413
-Bucharest,Romania,Central and Eastern Europe,Weekly Rent,110.2401709
-Moscow,Russia,Central and Eastern Europe,Water (600ml bottle),0.54
-Moscow,Russia,Central and Eastern Europe,Fast Food (Combo Meal),4.53
-Moscow,Russia,Central and Eastern Europe,Movie ticket,5.83
-Moscow,Russia,Central and Eastern Europe,Weekly Public Transport,6.469147849
-Moscow,Russia,Central and Eastern Europe,Weekly Rent,199.2087894
-Belgrade,Serbia,Central and Eastern Europe,Water (600ml bottle),1.22
-Belgrade,Serbia,Central and Eastern Europe,Fast Food (Combo Meal),6.02
-Belgrade,Serbia,Central and Eastern Europe,Movie ticket,5.02
-Belgrade,Serbia,Central and Eastern Europe,Weekly Public Transport,7.509366571
-Belgrade,Serbia,Central and Eastern Europe,Weekly Rent,96.63677956
-Madrid,Spain,Southern Europe,Water (600ml bottle),1.82
-Madrid,Spain,Southern Europe,Fast Food (Combo Meal),9.5
-Madrid,Spain,Southern Europe,Movie ticket,10.68
-Madrid,Spain,Southern Europe,Weekly Public Transport,14.99802082
-Madrid,Spain,Southern Europe,Weekly Rent,243.5745782
-Stockholm,Sweden,Northern Europe,Water (600ml bottle),2.25
-Stockholm,Sweden,Northern Europe,Fast Food (Combo Meal),9.28
-Stockholm,Sweden,Northern Europe,Movie ticket,15.08
-Stockholm,Sweden,Northern Europe,Weekly Public Transport,24.900811
-Stockholm,Sweden,Northern Europe,Weekly Rent,335.6914693
-Zurich,Switzerland,Western Europe,Water (600ml bottle),4.63
-Zurich,Switzerland,Western Europe,Fast Food (Combo Meal),16.11
-Zurich,Switzerland,Western Europe,Movie ticket,21.48
-Zurich,Switzerland,Western Europe,Weekly Public Transport,21.01379901
-Zurich,Switzerland,Western Europe,Weekly Rent,495.7148512
-Kiev,Ukraine,Central and Eastern Europe,Water (600ml bottle),0.42
-Kiev,Ukraine,Central and Eastern Europe,Fast Food (Combo Meal),4.32
-Kiev,Ukraine,Central and Eastern Europe,Movie ticket,4.32
-Kiev,Ukraine,Central and Eastern Europe,Weekly Public Transport,2.897423387
-Kiev,Ukraine,Central and Eastern Europe,Weekly Rent,129.3277241
-London,United Kingdom,Western Europe,Water (600ml bottle),1.55
-London,United Kingdom,Western Europe,Fast Food (Combo Meal),8.3
-London,United Kingdom,Western Europe,Movie ticket,17.98
-London,United Kingdom,Western Europe,Weekly Public Transport,47.74419825
-London,United Kingdom,Western Europe,Weekly Rent,542.8814059
+Vienna ????,Austria,Western Europe,Water (600ml bottle),2.52
+Vienna ????,Austria,Western Europe,Fast Food (Combo Meal),9.41
+Vienna ????,Austria,Western Europe,Movie ticket,12.94
+Vienna ????,Austria,Western Europe,Weekly Public Transport,13.26048734
+Vienna ????,Austria,Western Europe,Weekly Rent,241.7587981
+Minsk ????,Belarus,Central and Eastern Europe,Water (600ml bottle),0.42
+Minsk ????,Belarus,Central and Eastern Europe,Fast Food (Combo Meal),3.8
+Minsk ????,Belarus,Central and Eastern Europe,Movie ticket,3.8
+Minsk ????,Belarus,Central and Eastern Europe,Weekly Public Transport,3.500382027
+Minsk ????,Belarus,Central and Eastern Europe,Weekly Rent,91.92357614
+Brussels ????,Belgium,Western Europe,Water (600ml bottle),2.43
+Brussels ????,Belgium,Western Europe,Fast Food (Combo Meal),10.58
+Brussels ????,Belgium,Western Europe,Movie ticket,14.11
+Brussels ????,Belgium,Western Europe,Weekly Public Transport,13.53204886
+Brussels ????,Belgium,Western Europe,Weekly Rent,229.9274609
+Sofia ????,Bulgaria,Central and Eastern Europe,Water (600ml bottle),0.72
+Sofia ????,Bulgaria,Central and Eastern Europe,Fast Food (Combo Meal),6.02
+Sofia ????,Bulgaria,Central and Eastern Europe,Movie ticket,7.23
+Sofia ????,Bulgaria,Central and Eastern Europe,Weekly Public Transport,6.92942162
+Sofia ????,Bulgaria,Central and Eastern Europe,Weekly Rent,100.0612164
+Prague ????,Czech Republic,Central and Eastern Europe,Water (600ml bottle),1.3
+Prague ????,Czech Republic,Central and Eastern Europe,Fast Food (Combo Meal),6.76
+Prague ????,Czech Republic,Central and Eastern Europe,Movie ticket,9.01
+Prague ????,Czech Republic,Central and Eastern Europe,Weekly Public Transport,5.70509339
+Prague ????,Czech Republic,Central and Eastern Europe,Weekly Rent,191.2552586
+Copenhagen ????,Denmark,Northern Europe,Water (600ml bottle),2.96
+Copenhagen ????,Denmark,Northern Europe,Fast Food (Combo Meal),12.65
+Copenhagen ????,Denmark,Northern Europe,Movie ticket,18.97
+Copenhagen ????,Denmark,Northern Europe,Weekly Public Transport,21.83078495
+Copenhagen ????,Denmark,Northern Europe,Weekly Rent,376.2968213
+Helsinki ????,Finland,Northern Europe,Water (600ml bottle),2.07
+Helsinki ????,Finland,Northern Europe,Fast Food (Combo Meal),9.41
+Helsinki ????,Finland,Northern Europe,Movie ticket,17.64
+Helsinki ????,Finland,Northern Europe,Weekly Public Transport,16.15560936
+Helsinki ????,Finland,Northern Europe,Weekly Rent,267.8540196
+Paris ????,France,Western Europe,Water (600ml bottle),2.66
+Paris ????,France,Western Europe,Fast Food (Combo Meal),10.58
+Paris ????,France,Western Europe,Movie ticket,13.99
+Paris ????,France,Western Europe,Weekly Public Transport,20.29807329
+Paris ????,France,Western Europe,Weekly Rent,330.3499922
+Athens ????,Greece,Southern Europe,Water (600ml bottle),0.59
+Athens ????,Greece,Southern Europe,Fast Food (Combo Meal),7.08
+Athens ????,Greece,Southern Europe,Movie ticket,9.44
+Athens ????,Greece,Southern Europe,Weekly Public Transport,8.151448482
+Athens ????,Greece,Southern Europe,Weekly Rent,105.9596248
+Budapest ????,Hungary,Central and Eastern Europe,Water (600ml bottle),0.89
+Budapest ????,Hungary,Central and Eastern Europe,Fast Food (Combo Meal),5.24
+Budapest ????,Hungary,Central and Eastern Europe,Movie ticket,6.31
+Budapest ????,Hungary,Central and Eastern Europe,Weekly Public Transport,7.166462612
+Budapest ????,Hungary,Central and Eastern Europe,Weekly Rent,118.4790714
+Dublin ????,Ireland,Western Europe,Water (600ml bottle),1.72
+Dublin ????,Ireland,Western Europe,Fast Food (Combo Meal),10.42
+Dublin ????,Ireland,Western Europe,Movie ticket,14.17
+Dublin ????,Ireland,Western Europe,Weekly Public Transport,38.03702442
+Dublin ????,Ireland,Western Europe,Weekly Rent,446.2837496
+Rome ????,Italy,Southern Europe,Water (600ml bottle),1.31
+Rome ????,Italy,Southern Europe,Fast Food (Combo Meal),9.44
+Rome ????,Italy,Southern Europe,Movie ticket,10.63
+Rome ????,Italy,Southern Europe,Weekly Public Transport,9.509256106
+Rome ????,Italy,Southern Europe,Weekly Rent,255.3898059
+Amsterdam ????,Netherlands,Western Europe,Water (600ml bottle),2.53
+Amsterdam ????,Netherlands,Western Europe,Fast Food (Combo Meal),10.63
+Amsterdam ????,Netherlands,Western Europe,Movie ticket,14.17
+Amsterdam ????,Netherlands,Western Europe,Weekly Public Transport,26.49105688
+Amsterdam ????,Netherlands,Western Europe,Weekly Rent,436.1669321
+Oslo ????,Norway,Northern Europe,Water (600ml bottle),3.24
+Oslo ????,Norway,Northern Europe,Fast Food (Combo Meal),12.93
+Oslo ????,Norway,Northern Europe,Movie ticket,15.28
+Oslo ????,Norway,Northern Europe,Weekly Public Transport,20.8296895
+Oslo ????,Norway,Northern Europe,Weekly Rent,350.4271341
+Warsaw ????,Poland,Central and Eastern Europe,Water (600ml bottle),0.9
+Warsaw ????,Poland,Central and Eastern Europe,Fast Food (Combo Meal),5.66
+Warsaw ????,Poland,Central and Eastern Europe,Movie ticket,7.71
+Warsaw ????,Poland,Central and Eastern Europe,Weekly Public Transport,6.50827112
+Warsaw ????,Poland,Central and Eastern Europe,Weekly Rent,183.3155361
+Bucharest ????,Romania,Central and Eastern Europe,Water (600ml bottle),1.46
+Bucharest ????,Romania,Central and Eastern Europe,Fast Food (Combo Meal),4.8
+Bucharest ????,Romania,Central and Eastern Europe,Movie ticket,7.21
+Bucharest ????,Romania,Central and Eastern Europe,Weekly Public Transport,3.870902413
+Bucharest ????,Romania,Central and Eastern Europe,Weekly Rent,110.2401709
+Moscow ????,Russia,Central and Eastern Europe,Water (600ml bottle),0.54
+Moscow ????,Russia,Central and Eastern Europe,Fast Food (Combo Meal),4.53
+Moscow ????,Russia,Central and Eastern Europe,Movie ticket,5.83
+Moscow ????,Russia,Central and Eastern Europe,Weekly Public Transport,6.469147849
+Moscow ????,Russia,Central and Eastern Europe,Weekly Rent,199.2087894
+Belgrade ????,Serbia,Central and Eastern Europe,Water (600ml bottle),1.22
+Belgrade ????,Serbia,Central and Eastern Europe,Fast Food (Combo Meal),6.02
+Belgrade ????,Serbia,Central and Eastern Europe,Movie ticket,5.02
+Belgrade ????,Serbia,Central and Eastern Europe,Weekly Public Transport,7.509366571
+Belgrade ????,Serbia,Central and Eastern Europe,Weekly Rent,96.63677956
+Madrid ????,Spain,Southern Europe,Water (600ml bottle),1.82
+Madrid ????,Spain,Southern Europe,Fast Food (Combo Meal),9.5
+Madrid ????,Spain,Southern Europe,Movie ticket,10.68
+Madrid ????,Spain,Southern Europe,Weekly Public Transport,14.99802082
+Madrid ????,Spain,Southern Europe,Weekly Rent,243.5745782
+Stockholm ????,Sweden,Northern Europe,Water (600ml bottle),2.25
+Stockholm ????,Sweden,Northern Europe,Fast Food (Combo Meal),9.28
+Stockholm ????,Sweden,Northern Europe,Movie ticket,15.08
+Stockholm ????,Sweden,Northern Europe,Weekly Public Transport,24.900811
+Stockholm ????,Sweden,Northern Europe,Weekly Rent,335.6914693
+Zurich ????,Switzerland,Western Europe,Water (600ml bottle),4.63
+Zurich ????,Switzerland,Western Europe,Fast Food (Combo Meal),16.11
+Zurich ????,Switzerland,Western Europe,Movie ticket,21.48
+Zurich ????,Switzerland,Western Europe,Weekly Public Transport,21.01379901
+Zurich ????,Switzerland,Western Europe,Weekly Rent,495.7148512
+Kiev ????,Ukraine,Central and Eastern Europe,Water (600ml bottle),0.42
+Kiev ????,Ukraine,Central and Eastern Europe,Fast Food (Combo Meal),4.32
+Kiev ????,Ukraine,Central and Eastern Europe,Movie ticket,4.32
+Kiev ????,Ukraine,Central and Eastern Europe,Weekly Public Transport,2.897423387
+Kiev ????,Ukraine,Central and Eastern Europe,Weekly Rent,129.3277241
+London ????,United Kingdom,Western Europe,Water (600ml bottle),1.55
+London ????,United Kingdom,Western Europe,Fast Food (Combo Meal),8.3
+London ????,United Kingdom,Western Europe,Movie ticket,17.98
+London ????,United Kingdom,Western Europe,Weekly Public Transport,47.74419825
+London ????,United Kingdom,Western Europe,Weekly Rent,542.8814059
